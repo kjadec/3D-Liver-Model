@@ -1,170 +1,165 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html>
 <head>
-<title>Page Title</title>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
-/* Style the body */
-body {
-  font-family: Arial;
-  margin: 0;
-}
+	body {
+  	font-family: Arial;
+ 	 margin: 0;
+	}
 
-/* Header/Logo Title */
-.header {
-  padding: 60px;
-  text-align: center;
-  background: #1abc9c;
-  color: white;
-  font-size: 30px;
-}
+	.header {
+  	padding: 60px;
+  	text-align: center;
+  	background: #1abc9c;
+  	color: white;
+  	font-size: 30px;
+	}
 
-/* Page Content */
-.content {padding:20px;}
-</style>
-</head>
-<body>
+	.content {padding:20px;}
+	</style>
+	</head>
+	<body>
 
 <div class="header">
   <h1>Welcome!</h1>
   <p>This page holds models of the liver.</p>
 </div>
 
-<div class="content">
-
-<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 <style>
 div.sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: white;
-  padding: 50px;
-  font-size: 20px;
+  padding: 10px;
+  font-size: 10px;
+  width: 20%
 }
 </style>
-</head>
-<body>
 
+<body>
 
 <div class="sticky">
-<h1 style="font-family:sans-serif;"> Legend</h1>
+	<h1 style="font-family:sans-serif;"> Legend</h1>
 
-<style>
-table {
-  font-family: sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
+	<style>
+	table {
+ 	 font-family: sans-serif;
+ 	 border-collapse: collapse;
+ 	 width: 20%;
+	}
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
+	td, th {
+  	border: 1px solid #dddddd;
+  	text-align: left;
+  	padding: 8px;
+	}
 
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-</style>
-</head>
-<body>
+	tr:nth-child(even) {
+ 	 background-color: #dddddd;
+	}
+	</style>
+	<body>
 
-<table>
-  <tr>
-    <th>Colour</th>
-    <th>Vessel</th>
-  </tr>
-  <tr>
-    <td>Yellow</td>
-    <td>Left Hepatic Vein</td>
-  </tr>
-  <tr>
-    <td> Red</td>
-    <td>Inferior Vena Cava</td>
-  </tr>
-  <tr>
-    <td>Pink</td>
-    <td>Middle Hepatic Vein</td>
-  </tr>
-  <tr>
-    <td>Purple</td>
-    <td>Left Portal Vein</td>
-  </tr>
-  <tr>
-    <td>Green</td>
-    <td>Ductus Venosus</td>
-  </tr>
-  <tr>
-    <td>Dark Blue</td>
-    <td>Right Hepatic Vein</td>
-  </tr>
-  <tr>
-    <td>Light Blue</td>
-    <td>Main Portal Vein</td>
-  </tr>
-  <tr>
-    <td>Light Orange</td>
-    <td>Umbilical Vein</td>
-  </tr>
-  <tr>
-    <td>Dark Orange</td>
-    <td>Right Portal Vein</td>
-  </tr>
-</table>
-
-</div> 
-
-<hr> 
-  
-<h1 style="font-family:sans-serif;"> Controls </h1>
- <ul>
-  <li>Use cursor to rotate model</li>
-  <li>Scroll in and out to zoom in on model</li>
-  <li>Click on model once to pause</li>
-</ul>
-<hr>
-
-<h1 style="color:midnightblue;">Model 1</h1>
-<i>Vasculature With Outer Model</i>
-  
-<model-viewer
-  alt="Model of Liver vasculature"
-  src="https://github.com/livermodel/project/blob/master/Veinswithtranslucentouter.glb"
-  style="width: 100%; height: 800px;"
-  preload
-  reveal-when-loaded
-  auto-rotate
-  camera-controls
-></model-viewer>
-  
-
-<hr>
-
-<h1 style="color:midnightblue;">Model 2</h1>
-<i>Opaque Vasculature</i>
-
-  
-<model-viewer
-  alt="Model of Liver vasculature"
-  src="VeinsOpaquesingle.glb"
-  style="width: 100%; height: 800px;"
-  background-color="lightsteelblue"
-  preload
-  reveal-when-loaded
-  auto-rotate
-  camera-controls
-></model-viewer>
-  
-
-<hr>
+	<table>
+ 	 <tr>
+   	 <th>Colour</th>
+   	 <th>Vessel</th>
+  	</tr>
+  	<tr>
+   	 	<td>Yellow</td>
+    	<td>Left Hepatic Vein</td>
+ 	 </tr>
+ 	 <tr>
+   	 	<td> Red</td>
+    	<td>Inferior Vena Cava</td>
+  	</tr>
+  	<tr>
+    	<td>Pink</td>
+    	<td>Middle Hepatic Vein</td>
+  	</tr>
+  	<tr>
+    	<td>Purple</td>
+    	<td>Left Portal Vein</td>
+  	</tr>
+  	<tr>
+    	<td>Green</td>
+    	<td>Ductus Venosus</td>
+  	</tr>
+  	<tr>
+    	<td>Dark Blue</td>
+    	<td>Right Hepatic Vein</td>
+  	</tr>
+  	<tr>
+    	<td>Light Blue</td>
+    	<td>Main Portal Vein</td>
+  	</tr>
+  	<tr>
+    	<td>Light Orange</td>
+    	<td>Umbilical Vein</td>
+  	</tr>
+  	<tr>
+    	<td>Dark Orange</td>
+    	<td>Right Portal Vein</td>
+  	</tr>
+	</table>
 </div>
+
+
+<div class="content">
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+	<h1 style="font-family:sans-serif;"> Controls </h1>
+ 		<ul>
+  			<li>Use cursor to rotate model</li>
+  			<li>Scroll in and out to zoom in on model</li>
+  			<li>Click on model once to pause</li>
+		</ul>
+        
+<hr>
+
+
+	<h1 style="color:midnightblue;">Model 1</h1>
+	<i>Vasculature With Outer Model</i>
+  
+	<model-viewer
+ 	 	alt="Model of Liver vasculature"
+     	src=""
+    	 style="width: 100%; height: 800px;"
+    	 preload
+    	 reveal-when-loaded
+    	 auto-rotate
+    	 camera-controls
+	></model-viewer>
+  
+
+<hr>
+
+	<h1 style="color:midnightblue;">Model 2</h1>
+	<i>Opaque Vasculature</i>
+
+  
+	<model-viewer
+  		alt="Model of Liver vasculature"
+ 		src="VeinsOpaquesingle.glb"
+  		style="width: 100%; height: 800px;"
+  		background-color="lightsteelblue"
+  		preload
+  		reveal-when-loaded
+  		auto-rotate
+  		camera-controls
+	></model-viewer>
+  
+
+<hr>
+
+</div>
+
+
 
 </body>
 </html>
-
-</body>
-</html> 
