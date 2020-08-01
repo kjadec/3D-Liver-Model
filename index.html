@@ -1,71 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<title>Page Title</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-
 body {
   	font-family: Arial;
- 	 margin: 0;
+ 	margin: 0;
+    background-color:#DCDCDC;
 	}
 
 .header {
-  	padding: 60px;
-  	text-align: center;
-  	background: #87CEFA;
-  	color: white;
-  	font-size: 30px;
-	}
-
-.content {padding-left:0%;}
-
-* {
-  box-sizing: border-box;
+  padding: 60px;
+  text-align: center;
+  background: #87CEFA;
+  color: white;
+  font-size: 30px;
 }
-
-.column {
-  float: left;
-  padding: 10px;
-  height: 100%; 
-}
-
-.left {
-  width: 25%;
-}
-
-.right {
-  width: 75%;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-div.sticky {
+    
+    
+.sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: white;
   padding: 10px;
   font-size: 15px;
-  width: 100%
+  width: 25%
 }
 
+
+.content {
+	padding:20px;
+    width: 75%;
+    margin-left: 30%;
+
+
+}
 </style>
 </head>
-
 <body>
+
 <div class="header">
   <h1>Welcome!</h1>
   <p>This page holds models of the liver.</p>
 </div>
-
-
-<div class="content">
-<div class="row">
-  <div class="column left" style="background-color:#DCDCDC;">
 
 
 <div class="sticky">
@@ -136,11 +116,8 @@ div.sticky {
     </body>
 
 </div>
-</div>
 
-  
-  
-  <div class="column right" style="background-color:#F0F8FF;">
+<div class="content" style="background-color:#F0F8FF;">
 
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
@@ -187,16 +164,9 @@ div.sticky {
   		auto-rotate
   		camera-controls
 	></model-viewer>
-  
 
 <hr>
-
-
 </div>
-</div>
-
-
-
 
 </body>
 </html>
