@@ -1,65 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+<html>
 <head>
-<title>The Liver</title>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
-  	font-family: Arial;
- 	margin: 0;
-    background-color:#DCDCDC;
-	}
+  margin: 0;
+  font-family: Arial;
+}
 
-.header {
+.top-container {
   padding: 60px;
   text-align: center;
   background: #87CEFA;
   color: white;
   font-size: 30px;
-  padding-left: 300px;
-}
-    
-    
-.tag-wrapper {
-    position: absolute;
-    left: 1%;
-    top: 5px;
 }
 
-.tag {
-    position: fixed;
-    background: white;
-    border-top: 0px;
-    padding: 3px 5px;
-    width:22%;
-    top: 50px;
-    
+.header {
+  padding: 3px 5px;
+  background: white;
 }
-
 
 .content {
-    padding:20px;
-    width: 70%;
-    margin-left: 25%;
+  padding: 16px;
+  width: 70%;
+  margin-left: 25%;
+}
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 23%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
 }
 
 .footer{
 	height: 100px;
     }
+    
 </style>
 </head>
 <body>
 
-<div class="header">
+<div class="top-container">
   <h1>Welcome!</h1>
   <p>This page holds models of the liver.</p>
 </div>
 
-
-<div class="tag-wrapper">
-    <div class="tag">
+<div class="header" id="myHeader">
 <h1 style="text-align:center;">Legend</h1>
 
 	<style>
@@ -130,7 +122,6 @@ body {
 </div>
 
 <div class="content" style="background-color:#F0F8FF;">
-
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
@@ -182,6 +173,21 @@ body {
 
 <div class="footer">
 </div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
 
 </body>
 </html>
