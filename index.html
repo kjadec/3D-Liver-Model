@@ -164,7 +164,7 @@ body {
 	<h1 style="color:midnightblue;">Model 2</h1>
 	<i>Vasculature of Liver</i>
 	
-<model-viewer id="toggle-model" src="../shared-assets/models/shishkebab.glb" alt="Model of Liver vasculature" shadow-intensity="1" style="width: 100%; height: 800px;"
+<model-viewer id="toggle-model" src="VeinsOpaquesingle.glb" "Veinswithtranslucentouter.glb" alt="Model of Liver vasculature" shadow-intensity="1" style="width: 100%; height: 800px;"
     	 preload
     	 reveal-when-loaded
     	 auto-rotate
@@ -173,7 +173,7 @@ body {
     const models = ['VeinsOpaquesingle.glb', 'Veinswithtranslucentouter.glb'];
     const toggleModel = document.querySelector('#toggle-model');
     let i = 0;
-    setInterval(() => toggleModel.setAttribute('src', `../shared-assets/models/${models[i++ % 2]}`), 2000);
+    setInterval(() => toggleModel.setAttribute('VeinsOpaquesingle.glb', 'Veinswithtranslucentouter.glb'), 2000);
 </script>
 
 
